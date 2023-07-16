@@ -1,0 +1,464 @@
+.main-body{
+    width:100%;
+}
+.main-body navbar{
+    width:100%;
+}
+.logo-image{
+    width: 80px;
+    height: 80px;
+}
+.logo-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.link-for-site a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.71);
+}
+.second-d-flex-in-navbar{
+    width: 40%;
+}
+@media(max-width:900px){
+    .second-d-flex-in-navbar{
+        width: 50%;
+    }
+}
+.second-d-flex-in-navbar .link-for-site{
+    width: 76%;
+}
+
+@media(max-width:500px){
+    body .link-for-site{
+       display: none;
+       position: fixed;
+       width: 50% !important;
+       height: 100%;
+       top: 0%;
+       right: 0%;
+       z-index: 50;
+       background-color: #e6e8e7;
+    }
+    .second-d-flex-in-navbar .link-for-site a{
+       display: block !important;
+       padding: 1.6rem 2rem;
+    }
+    .second-d-flex-in-navbar{
+        width: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.welcoming-section{
+    background-color: rgb(217, 217, 217);
+    padding: 3rem 7rem;
+}
+@media(max-width:500px){
+    .welcoming-section{
+        background-color: rgb(217, 217, 217);
+        padding: 3rem 0.1rem;
+    } 
+}
+.welcoming-heading{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+
+
+form{
+    width: 100%;
+}
+form .first-input-welcome, form .second-input-div{
+    width:50%;
+    height: 13vh;
+    background-color: white;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 2rem;
+}
+.first-input-welcome::placeholder, .second-input-welcome::placeholder{
+    color: rgba(0, 0, 0, 0.381);
+    font-size: 1.2rem;
+}
+.second-input-div{
+    border-left: 1px solid rgba(164, 164, 164, 0.578) !important;
+    border-radius: 0px 5px 5px 0px !important;
+    padding: 1rem !important;
+}
+input:focus{
+    border: none !important;
+    outline: none;
+    
+}
+.second-input-div .second-input-welcome{
+    width: 70%;
+    height: 100%;
+    padding: 0rem 0rem 0rem 0.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.submit-btn{
+    width: 25% !important;
+    height: fit-content !important;
+    background-color: #00BD62 !important;
+    padding: 0.8rem 0px;
+}
+
+@media(max-width:900px){
+    form .first-input-welcome, form .second-input-div{
+        width:100%;
+        height: 8vh;
+        border-radius: 5px !important;
+    }
+    .second-input-div{
+        margin-top: 1.2rem;
+    }
+    .submit-btn{
+        width: 100% !important;
+        height: fit-content !important;
+        background-color: #00BD62 !important;
+        padding: 1.3rem 0px;
+        margin-top: 1.2rem;
+    }
+    .second-input-div .second-input-welcome{
+        width: 97%;
+        height: 100% !important;
+        padding: 0rem 0rem 0rem 0.5rem;
+        background-color: white;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+    }
+}
+
+
+
+/* only for the select option */
+form .custom-select {
+    width:50%;
+    height: 13vh;
+    background-color: white;
+    border: none;
+    position: relative;
+    /* border-radius: 5px 0px 0px 5px;
+    padding: 2rem; */
+}
+@media(max-width:900px){
+    form .custom-select {
+        width:100%;
+        height: 8vh;
+        background-color: white;
+        border: none;
+        position: relative;
+        /* border-radius: 5px 0px 0px 5px;
+        padding: 2rem; */
+    }
+}
+@media(max-width:500px){
+    form .custom-select {
+        width:100%;
+        height: 8vh;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0rem 2rem;
+    }
+}
+  
+  /* .custom-select select {
+    display: block;
+  } */
+  
+  .select-styled {
+    height: fit-content;
+    position: relative;
+    top: 30%;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: #555555;
+  }
+  
+  .select-styled:after {
+    content: "";
+    position: absolute;
+    top: 51%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #555555;
+  }
+  
+  .select-styled.open:after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .select-options {
+    /* display: none; */
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #f5f5f5;
+  }
+  
+  .select-styled.open ~ .select-options {
+    display: block;
+  }
+  
+  .select-option {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .select-option:hover {
+    background-color: #e6e6e6;
+  }
+
+
+
+
+
+
+
+
+
+
+  .img-display{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+.img-display img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.first-detail{
+    color: #00BD62;
+}
+.second-details{
+    font-size: 20px;
+    font-weight: bold;
+    color: #00BD62;
+}
+.discription-properties{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.third-details{
+
+}
+.property{
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.property i{
+    color: #00BD62;
+}
+.property p{
+    color: rgba(0, 0, 0, 0.71);
+}
+.person-update, .date-update{
+    display: flex;
+    align-items: center;
+}
+.person-update i, .person-update p{
+    color: #555555a5;
+    font-size: 1rem;
+}
+.date-update i, .date-update p{
+    color: #555555a5;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+.lastest-listing-for-property-page{
+    border-bottom:3px solid #00BD62;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    width: fit-content;
+    line-height: 3rem;
+}
+
+.lastest-listing-main-display{
+    display: flex;
+    justify-content: space-between;
+}
+.lastest-listing-img{
+    width: 100px;
+    height: 100px;
+}
+.lastest-listing-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.first-main-heading{
+    font-size: 20px;
+    font-weight: bold;
+    color: #00BD62;
+}
+.description-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.actual-price{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+
+
+
+.pagination-house{
+    display: flex;
+    list-style-type: none;
+}
+.pagination-house a{
+   padding: 0.8rem 1rem;
+   font-size: 12px;
+   background-color: rgb(62, 62, 62);
+   color: white;
+}
+.pagination-house .active{
+   background-color: #00BD62 !important;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #303030;
+}
+.footer-logo{
+    width:150px;
+    height: 100px;
+}
+.footer-logo img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.below-img{
+    font-size: 0.9rem;
+    color: silver;
+}
+.help-support-desk .hel-text{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+.help-support-desk p a{
+    font-size: 1rem;
+    color: rgba(245, 245, 245, 0.87);
+    text-decoration: none;
+}
+.help-support-desk p a:hover{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.inside-the-first-part-in-foter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.col-lg-4 .footer-form-block{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.col-lg-4 .footer-form-block form {
+    width: 100%;
+    background-color: green;
+    /* border-radius:15px 0px 0px 15px ; */
+}
+
+form .footer-input{
+    width: 80%;
+    padding: 0px 1rem ;
+    font-size: 1.2rem;
+}
+form .footer-submit{
+    height: 100%;
+    width: 20%;
+    border: none;
+    background-color: #00BD62;
+    color: white;
+    padding: 1rem 0px;
+}
+.social-media-logo-footer{
+   padding: 0.5rem 0.8rem;
+   background-color: white;
+}
+.social-media-logo-footer i{
+    font-size: 1rem;
+    color: #293831;
+}
+footer .baseline-footer{
+    width: 100%;
+    height: fit-content;
+    border-top: 1px solid rgba(192, 192, 192, 0.371);
+}
+.baseline-footer-text{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.474);
+}
